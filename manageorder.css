@@ -1,0 +1,162 @@
+@import "style.css";
+@import "customerdashbord.css";
+@import "foods.css";
+@import "businessAccountDashbord.css";
+head {
+    background-color: #FD9899;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FD9899;
+    padding: 30px;
+}
+
+.text i {
+    font-size: 7rem;
+    color: white
+}
+
+.text h1 {
+    margin: 0;
+    color: white
+}
+
+.tab {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ebebeb;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #E1306C;
+}
+
+.tab button:hover {
+    background-color: #E1306C;
+    color: white;
+}
+
+.tab button.active {
+    background-color: #E1306C;
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ebebeb;
+    border-top: none;
+}
+
+.order-card {
+    width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 20px;
+}
+
+.order-card small {
+    color: rgb(155, 155, 155);
+    font-size: 0.65rem;
+}
+
+.right {
+    float: right;
+}
+
+.flex-order {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.flex-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.inner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.inner:nth-child(2) {
+    overflow: auto;
+}
+
+.flex-order p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.descrip {
+    font-size: 0.rem;
+}
+
+.flex-order table {
+    width: 100%;
+}
+
+.flex-order table td {
+    padding: 8px 10px;
+}
+
+.flex-order table td:last-child {
+    text-align: right;
+}
+
+.grandt {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leftab {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center button {
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    background-color: #E1306C;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.center button:hover {
+    background-color: #cc205a;
+}
+
+@media screen and (max-width:700px) {
+    .flex-order p {
+        font-size: 00.75rem;
+    }
+    .flex-img {
+        width: 75px;
+        height: 75px;
+    }
+}

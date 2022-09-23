@@ -1,0 +1,67 @@
+.foodcard {
+    width: 480px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    row-gap: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.foodcard-img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.item-name {
+    margin: 0;
+    padding: 0;
+}
+
+.item-description {
+    font-size: 0.85rem;
+    color: rgb(126, 126, 126);
+    margin-top: 2px;
+}
+
+.item-price {
+    font-weight: bolder;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+
+.foodcard:hover {
+    transform: scale(1.05);
+}
+
+.foodcard div:nth-child(2) {
+    margin-left: auto;
+}
+
+.btnEdit,
+.btnDelete {
+    padding: 5px 8px;
+    border: none;
+    color: #E1306C;
+    background-color: white;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.btnEdit:hover,
+.btnDelete:hover {
+    background-color: #E1306C;
+    color: white;
+}
+
+.btnPos {
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    bottom: 15px;
+}

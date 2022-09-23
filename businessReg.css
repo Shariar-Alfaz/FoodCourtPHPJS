@@ -1,0 +1,137 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-image: url(image/pexels-lisa-918327.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#login_header {
+    background-color: transparent;
+    color: #FD9899;
+}
+
+div {
+    display: block;
+}
+
+#login_header div h1 {
+    display: inline;
+    font-size: 4vw;
+    font-family: Arial;
+    text-align: center;
+    margin-left: 37%;
+}
+
+#header_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#transparent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: rgba(37, 30, 30, 0.788);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 187, 187);
+    font-size: 1vw;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: rgb(255, 187, 187);
+    font-size: 1vw;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(255, 187, 187)
+}
+
+input[type=password]:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(255, 187, 187)
+}
+
+input[type=file] {
+    border-style: solid;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-color: white;
+}
+
+input[type=file]:focus {
+    border-color: rgb(255, 187, 187);
+}
+
+#regConfirmBtn {
+    font-size: 1.3vw;
+    padding: 10px 20px;
+    color: white;
+    background-color: #EE494A;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#regConfirmBtn:hover {
+    color: #EE494A;
+    background-color: white;
+}
+
+#form-section h2 {
+    text-align: center;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#preview {
+    width: 250px;
+    height: 150px;
+    border: 1px dashed #FD9899;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: none;
+    height: 100%;
+    overflow: hidden;
+}

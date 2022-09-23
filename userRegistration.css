@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#login_header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login_header div h1 {
+    font: size 4rem;
+    font-family: Arial;
+    text-align: center;
+    color: #FD9899;
+}
+
+#transparent {
+    text-align: center;
+    background: rgba(37, 30, 30, 0.603);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 187, 187);
+    ;
+    font-size: 1vw;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: rgb(255, 187, 187);
+    font-size: 1rem;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(255, 187, 187);
+}
+
+input[type=password]:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(255, 187, 187);
+}
+
+#regConfirmBtn {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(255, 187, 187);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#regConfirmBtn:hover {
+    color: rgb(255, 187, 187);
+    background-color: white;
+}
+
+#reg-form h2 {
+    text-align: center;
+    color: #473636;
+}
+
+.error {
+    color: rgb(255, 187, 187);
+}

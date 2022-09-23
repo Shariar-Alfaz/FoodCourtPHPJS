@@ -1,0 +1,124 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-image: url(image/pexels-jonathan-borba-2983101.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#login_header {
+    background-color: transparent;
+    color: #FD9899;
+}
+
+div {
+    display: block;
+}
+
+#login_header div h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+}
+
+#header_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#transparent {
+    text-align: center;
+    background: rgba(37, 30, 30, 0.788);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 187, 187);
+    font-size: 1.3rem;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: rgb(255, 187, 187);
+    font-size: 1rem;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(255, 187, 187)
+}
+
+input[type=password]:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(255, 187, 187)
+}
+
+#Loginbtn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: #EE494A;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#Loginbtn:hover {
+    background-color: white;
+    color: #EE494A;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    color: rgb(168, 8, 8);
+    font-size: 1rem;
+}
+
+a {
+    color: #FD9899;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(168, 8, 8);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:600px) {
+    #header_img {
+        width: 100px;
+        height: 100px;
+    }
+    #transparent {
+        width: 500px;
+    }
+    #login_header div h1 {
+        font-size: 3rem;
+    }
+}

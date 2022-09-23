@@ -1,0 +1,178 @@
+@import "style.css";
+@import "customerdashbord.css";
+.order-container {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 450px;
+}
+
+.orderId {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    color: #E1306C;
+}
+
+.right {
+    float: right;
+}
+
+.right p {
+    color: rgb(155, 155, 155);
+    font-size: 0.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.rimg {
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #E1306C;
+    padding: 2px;
+}
+
+.resname {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    color: white;
+    background-color: #E1306C;
+    font-size: 0.83rem;
+}
+
+td,
+th {
+    padding: 8px 15px;
+    text-align: right;
+}
+
+td:first-child,
+th:first-child {
+    text-align: left;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    text-align: center;
+}
+
+td {
+    font-size: 0.8rem;
+    color: rgb(112, 112, 112);
+}
+
+.tright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tright table {
+    width: 100%;
+    max-width: 210px;
+    border-top: 1px solid rgb(112, 112, 112);
+}
+
+:root {
+    --main-color: #111;
+    --loader-color: #E1306C;
+    --back-color: #eea4bd;
+    --time: 3s;
+    --size: 3px;
+}
+
+.loader {
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 200px;
+    height: 100%;
+}
+
+.loader__element {
+    height: var(--size);
+    width: 100%;
+    background: var(--back-color);
+}
+
+.loader__element:before {
+    content: '';
+    display: block;
+    background-color: var(--loader-color);
+    height: var(--size);
+    width: 0;
+    animation: getWidth var(--time) ease-in infinite;
+}
+
+@keyframes getWidth {
+    100% {
+        width: 100%;
+    }
+}
+
+.innerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pending {
+    text-align: center;
+}
+
+#appendItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.delivered {
+    text-align: center;
+}
+
+.delivered i {
+    color: green;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.delivered p {
+    margin: 0;
+    color: rgb(155, 155, 155);
+    font-size: 1rem;
+}
+
+#delivered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.stk {
+    position: sticky;
+    top: 78px;
+    background: white;
+}

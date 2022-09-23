@@ -1,0 +1,12 @@
+<?php
+    session_start();
+    if(isset($_SESSION["id"])){
+        if($_SESSION["rule"]=="vendor"){
+            header("Location:..\businessAccountDashbord.php");
+        }else{
+            header("Location:..\customerdashbord.php");
+        }
+    }else{
+        header("Location:..\login.php");
+    }
+?>
